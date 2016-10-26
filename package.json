@@ -1,0 +1,25 @@
+{
+  "name": "repo-cli",
+  "version": "0.0.1",
+  "description": "Simple CLI for scaffolding github projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giscafer/repo-cli.git"
+  },
+  "keywords": [
+    "repository",
+    "git",
+    "project",
+    "repo"
+  ],
+  "author": "giscafer<giscafer@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/giscafer/repo-cli/issues"
+  },
+  "homepage": "https://github.com/giscafer/repo-cli#readme"
+}
