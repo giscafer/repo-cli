@@ -1,8 +1,26 @@
-# touch-readme
+# repo-cli
 
- > **touch-readme** Help me create README.md file with the templates.
+ > **repo-cli** Simple CLI for scaffolding github projects.
 
- [![npm](https://img.shields.io/npm/v/touch-readme.svg?style=flat-square)](https://www.npmjs.com/package/touch-readme) [![npm](https://img.shields.io/npm/dt/touch-readme.svg?style=flat-square)](https://www.npmjs.com/package/touch-readme) [![npm](https://img.shields.io/npm/l/touch-readme.svg?style=flat-square)](https://www.npmjs.com/package/touch-readme)
+ [![npm](https://img.shields.io/npm/v/repo-cli.svg?style=flat-square)](https://www.npmjs.com/package/repo-cli) [![npm](https://img.shields.io/npm/dt/repo-cli.svg?style=flat-square)](https://www.npmjs.com/package/repo-cli) [![npm](https://img.shields.io/npm/l/repo-cli.svg?style=flat-square)](https://www.npmjs.com/package/repo-cli)
 
-	In the regular development
+
+# Usage
+
+## Installation
+
+> **npm install repo-cli -g**
+
+
+
+
+# License
+
+MIT
+
+---
+
+> [giscafer.com](http://giscafer.com) &nbsp;&middot;&nbsp;
+> GitHub [@giscafer](https://github.com/giscafer) &nbsp;&middot;&nbsp;
+> Weibo [@Nickbing Lao](https://weibo.com/laohoubin)
 
