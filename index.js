@@ -10,7 +10,7 @@
 const path = require('path');
 const fs = require('fs');
 const program = require('commander');
-// const touchReadme = require('touch-readme');//提供接口，传路径的
+const touchReadme = require('touch-readme');
 const pkg = require('./package.json');
 const REPO_PATH = path.join(process.cwd(), './project-demo/');
 const TEMP_PATH = path.join(__dirname, './templates/');
@@ -41,6 +41,7 @@ function npm() {
     createFile('.npmignore');
     createFile('LICENSE');
     createFile('package.json');
+    touchReadme.init(getTempPath());
     return;
 }
 
@@ -49,6 +50,7 @@ function common() {
     createFile('.gitignore');
     createFile('LICENSE');
     createFile('package.json');
+    touchReadme.init(getTempPath());
     return;
 }
 
@@ -60,7 +62,9 @@ function mkdir(path) {
         fs.mkdirSync(path);
     }
 }
-
+function getTempPath(fileName){
+    return path.join(REPO_PATH, 'README.md');
+}
 function deleteFolder(path) {
     let files = [];
     if (fs.existsSync(path)) {
