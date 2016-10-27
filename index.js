@@ -37,7 +37,7 @@ if (!process.argv.slice(2)[0]) {
 
 function npm() {
     mkdir(REPO_PATH);
-    createFile('.gitignore');
+    createFile('gitignore');
     createFile('.npmignore');
     createFile('LICENSE');
     createFile('package.json');
@@ -47,7 +47,7 @@ function npm() {
 
 function common() {
     mkdir(REPO_PATH);
-    createFile('.gitignore');
+    createFile('gitignore');
     createFile('LICENSE');
     createFile('package.json');
     touchReadme.init(getTempPath());
@@ -82,8 +82,11 @@ function deleteFolder(path) {
 };
 
 function createFile(fileName) {
-    fileName = fileName ? fileName : 'simple';
+    fileName = fileName ? fileName : 'LICENSE';
     let filePath = path.join(TEMP_PATH, fileName);
+    if(fileName==='gitignore'){
+        fileName='.'+fileName;
+    }
     let repoFilePath = path.join(REPO_PATH, fileName);
     fs.readFile(filePath, (err, data) => {
         if (err) {

@@ -1,6 +1,0 @@
-# projectd-demo
-
-# License
-
-MIT
-
