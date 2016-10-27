@@ -1,53 +1,61 @@
-# touch-readme
+# repo-cli
 
-transform a stream into a quoted string
+ > **repo-cli** Simple CLI for scaffolding github projects.
 
-[![testling badge](https://ci.testling.com/substack/touch-readme.png)](https://ci.testling.com/substack/touch-readme)
+ [![npm](https://img.shields.io/npm/v/repo-cli.svg?style=flat-square)](https://www.npmjs.com/package/repo-cli) [![npm](https://img.shields.io/npm/dt/repo-cli.svg?style=flat-square)](https://www.npmjs.com/package/repo-cli) [![npm](https://img.shields.io/npm/l/repo-cli.svg?style=flat-square)](https://www.npmjs.com/package/repo-cli)
 
-[![build status](https://secure.travis-ci.org/substack/touch-readme.png)](http://travis-ci.org/substack/touch-readme)
 
-# example
+# Usage
 
-``` js
-var quote = require('touch-readme');
-process.stdin.pipe(quote()).pipe(process.stdout);
-```
+## Installation
 
-output:
+> **npm install repo-cli -g**
 
-```
-$ echo beep boop | node example/stream.js
-"beep boop\n"
-```
 
-# methods
+## sample
 
-``` js
-var quote = require('touch-readme')
-```
-
-## var q = quote()
-
-Return a transform stream `q` that wraps input in double quotes and adds escape
-characters to the chunks.
-
-# usage
+> $ repo  --help
 
 ```
-usage: touch-readme
+ G:\GitHub\_study\test>repo --help
 
-  Transform stdin to a quoted string on stdout.
+  Usage: index [options]
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+    -v, --version  output version number
+    -n, --npm      create npm project demo
+    -c, --common   create github project
+
+  Examples:
+
+    $ repo
+    $ repo -n
+    $ repo -c
 
 ```
 
-# install
-
-With [npm](https://npmjs.org) do:
+> $ repo
 
 ```
-npm install touch-readme
-```
+	G:\GitHub\_study\test>repo
 
-# license
+	create g:\GitHub\_npm\repo-cli\project-demo\.gitignore success!
+	create g:\GitHub\_npm\repo-cli\project-demo\package.json success!
+	create g:\GitHub\_npm\repo-cli\project-demo\LICENSE success!
+	create g:\GitHub\_npm\repo-cli\project-demo\README.md success!
+
+```
+use command `repo` ,it will create a project-demo folder that includes`.gitignore`,`README.md` ect
+
+# License
 
 MIT
+
+---
+
+> [giscafer.com](http://giscafer.com) &nbsp;&middot;&nbsp;
+> GitHub [@giscafer](https://github.com/giscafer) &nbsp;&middot;&nbsp;
+> Weibo [@Nickbing Lao](https://weibo.com/laohoubin)
