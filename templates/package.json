@@ -1,7 +1,7 @@
 {
-  "name": "repo-cli",
+  "name": "project-demo",
   "version": "0.0.1",
-  "description": "Simple CLI for scaffolding github projects",
+  "description": "A project-demo create by repo-cli",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +11,7 @@
     "url": "git+https://github.com/giscafer/repo-cli.git"
   },
   "keywords": [
-    "repository",
-    "git",
-    "project",
+    "project-demo",
     "repo"
   ],
   "author": "giscafer<giscafer@outlook.com>",
@@ -23,7 +21,5 @@
   },
   "homepage": "https://github.com/giscafer/repo-cli#readme",
   "dependencies": {
-    "commander": "^2.9.0",
-    "touch-readme": "^0.1.3"
   }
 }
